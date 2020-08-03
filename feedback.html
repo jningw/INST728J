@@ -1,95 +1,141 @@
 <html>
 <head>
-<title>Feedback</title>
-<meta http-equiv="Content-Type" content="text/html;"/>
-</head>
-<body>
+    <title>Feedback</title>
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html;"/>
     <style>
-        div {
-            text-align: left;
-            padding-bottom: 2px;
-        } 
-        table {
-            padding: 10px;
+        .header-container{
+            width : 100%;
+            background-color : white;
+            float : left;
         }
-        td{
-            vertical-align: top;
+        
+        .container{
+            width : 100%;
+            height : auto;
+            background-color : darkred;
         }
-        label {
-            margin-left: 250px;
+        
+        #menu {
+            width : 20%;
+            float : left;
+            background-color: darkred;
         }
-    </style>
+        
+        a:link { 
+            color : gold;
+            background-color : transparent; 
+        }
+        
+        li {
+            list-style-type : square;
+            padding-left : 20px;
+            float : left;
+            color : white;
+        }
+        
+        .form-container{
+            width : 70%;
+            height : auto;
+            background-color : antiquewhite;
+            float : right;
+            margin-top : 5px;
+            margin-bottom : 5px;
+            margin-right : 40px;
+            padding-bottom: 20px;
+        }
+        
+        #instructions{
+            width : 100%;
+            background-color : antiquewhite;
+            float : right;
+            margin-top: 10px;
+        }
+        
+        #form {
+            width : 90%;
+            background-color : #FBEEEE;
+            float : right;
+            margin-top : 20px;
+            margin-right : 40px;
+        }
+        
+        .footer-container{
+            width : 100%;
+            background-color: antiquewhite;
+            text-align : center;
+            clear : both;
+            padding : 10px;
+        }
 
-    <br>    
-    <form name="Feedback" method="post" action="ThankYou.html">
-    <table width="100%" align="center" cellpadding="1" cellspacing="0" bgcolor="#FBEEEE"> 
-        <tr>
-                <td>&nbsp;</td>
-        </tr>    
-        <tr>
-                <td > 
-                    <div style='margin-left: 250px;'>
-                    <strong><font color="#9B3333">FEEDBACK</font></strong>
-                    </div>
-                </td>             
-            </tr>
-           <tr>
-                <td>&nbsp;</td>
-           </tr>
-        <tr>
-            <td>
-                <div>
-                    <label for="CaseID"><strong>CaseID:</strong></label>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <input type="number">
-                </div>
-            </td>
-        <tr>
-            <td>
-                <div>
-                    <label for="Subject" ><strong>Subject:<font color=red>*</font></strong></label>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <input type="text" size="60" required>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <label for="Comment"><strong>Comment:</strong></label>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <textarea rows="15" cols="30" name="comment"></textarea>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <div>
-                    <label for="Importance"><strong>Importance:</strong></label><br>
-                </div>
-            </td>
-            <td>
-                <div>
-                    <input type="radio" name="High">High<br>
-                    <input type="radio" name="Medium">Medium<br>
-                    <input type="radio" name="Low">Low
-                </div>
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </td>
-        </tr>
-      </table>
-    </form>
-                           
+    </style>    
+</head>
+    
+<body>
+    <div class="container">
+        <div class="header-container">
+           <img src="https://osc.umd.edu/img/logos/26_logo.jpg" alt="UMD logo" style="width:300px;height:100px;">
+        </div>
+
+        <div class="main-container">
+            <div id="menu">
+                <ul>
+                    <li><a href="url"><strong>Feedback</strong></a></li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <div id="instructions"><p style="padding-left: 45px;"><strong>Please complete following form</strong></p></div>
+
+                <div id="form">
+                     <form name="form1" method="post" action="thankyou.html" >
+                      <table width="100%" align="center" cellpadding="1" cellspacing="0" >
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td> <div align="center"> 
+                                    <table width="70%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td width="498" height="40" ><strong><font color="#9B3333">FEEDBACK</font></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="100%" align="center" cellpadding="2" cellspacing="0" >
+                                                    <tr>
+                                                        <td  valign="top"><strong>CaseID:</strong></td>
+                                                        <td ><input name="case_ID" type="text" value="34564"  size="15" readonly></td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td valign="top"><strong>Subject:<font color="#FF0000">*</font></strong></td>
+                                                          <td><input name="subject" type="text"   size="70" maxlength="40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" ><strong>Comment:<font color="#FF0000"></font></strong></td>
+                                                        <td><textarea name="comment" cols="40" rows="10" id="comment" ></textarea></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td valign="top" >&nbsp;</td>                                        
+                                                        <td><input type="submit" value="Submit"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </td>
+                          </tr>
+                      </table>
+                    </form>                           
+                </div> 
+            </div>
+        </div>
+        <div class="footer-container">
+            <footer>
+                <div>Copyright © UMD. All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>
