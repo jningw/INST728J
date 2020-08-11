@@ -2,6 +2,28 @@
 <head>
     <title>Feedback</title>
     <meta charset="utf-8" http-equiv="Content-Type" content="text/html;"/>
+    <script type = "text/javascript">
+      function formValidation() {
+      
+         if( document.form1.case_ID.value == "" ) {
+            alert( "Please provide the Case ID!" );
+            document.form1.case_ID.focus() ;
+            return false;
+         }
+         if( document.form1.subject.value == "" ) {
+            alert( "Please provide your Subject!" );
+            document.form1.subject.focus() ;
+            return false;
+         }
+         if( document.form1.comment.value == "" ){
+            alert( "Please include a Comment!" );
+            document.form1.comment.focus() ;
+            return false;
+         }
+         return(true);
+      }
+    </script>
+    
     <style>
         .header-container{
             width : 80%;
@@ -63,6 +85,7 @@
         
         #instructions{
             width : 100%;
+            height : auto;
             background-color : antiquewhite;
             float : right;
             margin-top: 10px;
@@ -119,7 +142,7 @@
                 <div id="instructions"><p style="padding-left: 45px;"><strong>Please complete following form</strong></p></div>
 
                 <div id="form">
-                     <form name="form1" method="post" action="thankyou.html" >
+                     <form action="thankyou.html" name="form1" onsubmit = "return(formValidation());" >
                       <table width="100%" align="center" cellpadding="1" cellspacing="0" >
                             <tr>
                                 <td>&nbsp;</td>
@@ -134,7 +157,7 @@
                                             <td>
                                                 <table width="100%" align="center" cellpadding="2" cellspacing="0" >
                                                     <tr>
-                                                        <td  valign="top"><strong>CaseID:</strong></td>
+                                                        <td  valign="top"><strong>CaseID:<font color="#FF0000">*</font></strong></td>
                                                         <td ><input name="case_ID" type="text" value="34564"  size="15" readonly></td>
                                                     </tr>
                                                     <tr>
@@ -142,7 +165,7 @@
                                                           <td><input name="subject" type="text"   size="70" maxlength="40"></td>
                                                     </tr>
                                                     <tr>
-                                                        <td valign="top" ><strong>Comment:<font color="#FF0000"></font></strong></td>
+                                                        <td valign="top" ><strong>Comment:<font color="#FF0000">*</font></strong></td>
                                                         <td><textarea name="comment" cols="40" rows="10" id="comment" ></textarea></td>
                                                     </tr>
                                                     <tr> 
