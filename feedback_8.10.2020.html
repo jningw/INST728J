@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Feedback</title>
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html;"/>
+    <style>
+        .header-container{
+            width : 80%;
+            background-color : white;
+            margin-left : 10%;
+            margin-right : 10%;
+        }
+        
+        .container{
+            width : 100%;
+            height : 100%;
+            padding-top : 5px;
+            background-image : url('mainBgrnd.gif');
+        }
+        
+        .main-container{
+            width : 80%;
+            height : auto;
+            margin-left : 10%;
+            margin-right : 10%;
+            float: left;
+            background-image : url('bg.gif');
+            background-size : cover;
+        }
+        
+        #menu {
+            width : 20%;
+            height : auto;
+            float : left;
+        }
+        
+        a:link { 
+            color : gold;
+            background-color : transparent; 
+        }
+        
+        a:visited {
+            color : gold;
+        }
+        
+        li {
+            list-style-image : url('arrow_ID.gif');
+            line-height: 28px;
+            padding-left : 20px;
+            float : left;
+            color : white;
+        }
+        
+        .form-container{
+            width : 70%;
+            height : auto;
+            background-color : antiquewhite;
+            float : right;
+            margin-top : 5px;
+            margin-bottom : 5px;
+            margin-right : 40px;
+            padding-bottom: 20px;
+        }
+        
+        #instructions{
+            width : 100%;
+            background-color : antiquewhite;
+            float : right;
+            margin-top: 10px;
+        }
+        
+        #form {
+            width : 90%;
+            background-color : #FBEEEE;
+            float : right;
+            margin-top : 20px;
+            margin-right : 40px;
+        }
+        
+        .footer-container{
+            width : 80%;
+            background-color: antiquewhite;
+            text-align : center;
+            clear : both;
+            padding-top : 10px;
+            padding-bottom : 10px;
+            margin-left : 10%;
+            margin-right : 10%;
+        }
+
+    </style>    
+</head>
+    
+<body>
+    <div class="container">
+        <div class="header-container">
+           <img src="https://osc.umd.edu/img/logos/26_logo.jpg" alt="UMD logo" style="width:300px;height:100px;">
+        </div>
+
+        <div class="main-container">
+            <div id="menu">
+                <ul>
+                    <li><a href="url">Payroll Information</a></li>
+                    <li><a href="url">Performance Appraisal</a></li>
+                    <li><a href="url">TimeSheet</a></li>
+                    <li><a href="url">Leave Management</a></li>
+                    <li><a href="url">Health Benefits</a></li>
+                    <li><a href="orgchart.html">Organization Chart</a></li>
+                    <li><a href="url">Access Management</a></li>
+                    <li><a href="url">Career Development</a></li>
+                    <li><a href="url">My Profile</a></li>
+                    <li><a href="url">Expense Reimbursement</a></li>
+                    <li><a href="url">Retirement Planning</a></li>
+                    <li><a href="url">Ticket Management</a></li>
+                    <li><a href="url">Documents</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="form-container">
+                <div id="instructions"><p style="padding-left: 45px;"><strong>Please complete following form</strong></p></div>
+
+                <div id="form">
+                     <form name="form1" method="post" action="thankyou.html" >
+                      <table width="100%" align="center" cellpadding="1" cellspacing="0" >
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td> <div align="center"> 
+                                    <table width="70%" cellpadding="0" cellspacing="0" >
+                                        <tr>
+                                            <td width="498" height="40" ><strong><font color="#9B3333">FEEDBACK</font></strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <table width="100%" align="center" cellpadding="2" cellspacing="0" >
+                                                    <tr>
+                                                        <td  valign="top"><strong>CaseID:</strong></td>
+                                                        <td ><input name="case_ID" type="text" value="34564"  size="15" readonly></td>
+                                                    </tr>
+                                                    <tr>
+                                                         <td valign="top"><strong>Subject:<font color="#FF0000">*</font></strong></td>
+                                                          <td><input name="subject" type="text"   size="70" maxlength="40"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="top" ><strong>Comment:<font color="#FF0000"></font></strong></td>
+                                                        <td><textarea name="comment" cols="40" rows="10" id="comment" ></textarea></td>
+                                                    </tr>
+                                                    <tr> 
+                                                        <td valign="top" >&nbsp;</td>                                        
+                                                        <td><input type="image" src="btn_submit.gif" alt="Submit" width="60" height="20"></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                    </div>
+                                </td>
+                          </tr>
+                      </table>
+                    </form>                           
+                </div> 
+            </div>
+        </div>
+        <div class="footer-container">
+            <footer>
+                <div>Copyright © UMD. All Rights Reserved.</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
