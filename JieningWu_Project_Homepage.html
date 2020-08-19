@@ -1,0 +1,386 @@
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Welcome | Jiening Wu</title>
+        <style>
+            .container{
+                width : 100%;
+                height : auto;
+                background-color: #c6dcbd;
+                color : #1e5606;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-weight : lighter;
+                letter-spacing: 2px;
+                text-overflow: break-word;
+                line-height : 1.25;
+            }
+            
+            .header-container{
+                width : 100%;
+                font-size : 20px;
+                padding-top : 24px;
+                padding-bottom : 100px;
+                background-color : #c6dcbd;
+                border-style : solid;
+                border-color : #c6dcbd;
+                border-width : 2px;
+            }
+            
+            .header-title{
+                width : auto;
+                font-size : 24px;
+                text-decoration: none;
+            }
+            
+            a:link {
+                text-decoration : none;
+                color: #434343;
+            }
+            
+            a:hover { 
+                color : whitesmoke;
+                background-color : transparent;
+                text-decoration : underline;
+            }
+            
+            a:active{
+                font-style : oblique;
+                text-decoration : underline;
+            }
+            
+            #header-nav{
+                width : 57%;
+                font-size : 20px;
+                float : right;
+            }
+          
+            nav ul li{
+                list-style-type : none;
+                display : inline-block;
+                padding-right: 50px;
+            }
+            
+            nav  li {
+                display : inline;
+                position : relative;
+            }
+	
+		
+            nav ul ul {
+                position : absolute;
+                left : 0;  
+                top : 100%;  
+                display : none;
+            }
+            
+            nav li:hover ul {
+                display : block;
+                background-color : #c6dcbd;
+                color : whitesmoke;
+                float : left;
+            }
+            
+            nav li:active ul{
+                font-style : oblique;
+                text-decoration : underline;                
+            }
+            
+            .main-container{
+                width : 100%;
+                
+            }
+            
+            .intro{
+                width: 100%;
+                height : 650px;
+                background-image : url(https://cdn.consumerscu.org/wp-content/uploads/2019/08/checking_account_1566231082.jpeg);
+                background-size : cover;
+                top : 0px;
+                border-style : solid;
+                border-color : #c6dcbd;
+                border-bottom-width : 2px;
+                border-left-width : 2px;
+                border-right-width : 2px;
+                border-top-width: 0px;
+            }
+            
+            #welcome{
+                width : 550px;
+                height : auto;
+                background-color : rgba(245, 245, 245, 0.95);
+                position : relative;
+                text-align : left;
+                padding-top : 20px;
+                padding-bottom : 20px;
+                padding-left : 45px;
+                padding-right : 45px;
+                display : block;
+                margin : auto;
+                border-style : solid;
+                border-color : #c6dcbd;
+                border-width : 2px;
+            }
+
+            #arrow{
+                display : block;
+                margin : auto;
+            }
+            
+            .summary{
+                width : 45%;
+                padding-top : 50px;
+                padding-bottom : 50px;
+                padding-left : 50px;
+                text-align: left;
+                font-size : 24px;
+                font-style : italic;
+                color : whitesmoke;
+                
+            }
+            
+            .button1{
+                border: none;
+                background-color: #1e5606;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 35px;
+                padding-right:35px;
+                text-align: center;
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 16px;
+                border-radius: 30px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-weight : lighter;
+                letter-spacing: 2px;
+                line-height : 1.25;
+            }
+            
+            button:hover{
+                background-color: whitesmoke;
+                color: #c6dcbd;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-weight : lighter;
+                letter-spacing: 2px;
+                line-height : 1.25;
+            }
+            
+            .work-promo{
+                width : 100%;
+                background-color : whitesmoke;
+                text-align : center;
+                font-size : 28px;
+                padding-top : 150px;
+                padding-bottom : 150px;
+                border-style : solid;
+                border-color : #c6dcbd;
+                border-width : 2px;
+            }
+            
+            .button2{
+                border: none;
+                background-color: #1e5606;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 35px;
+                padding-right:35px;
+                text-align: center;
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 16px;
+                border-radius: 30px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-weight : lighter;
+                letter-spacing: 2px;
+                line-height : 1.25;
+            }
+            
+            .label{
+                padding-top : 50px;
+                text-align : center;
+                font-size : 30px;
+            }
+            
+            .featured.work{
+                width : 100%;
+                background-color : whitesmoke;
+                text-align : center;
+                font-size : 36px;
+                padding-top : 25px;
+                padding-bottom : 50px;
+                border-style : solid;
+                border-color : #c6dcbd;
+                border-width : 2px;
+                
+            }
+            
+            table{
+                width : 70%;
+                height : auto;
+                position : relative;
+                padding-top : 25px;
+                padding-bottom : 25px;
+                margin-left : 8%;
+                margin-right : 8%;
+            }
+            
+            td{
+                width : 33%;
+                height : auto;
+                padding : 75px;
+                position : relative;
+                
+            }
+            
+            .button3{
+                border: none;
+                background-color: #1e5606;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 35px;
+                padding-right: 35px;
+                margin-left : 45%;
+                margin-bottom : 50px;
+                text-align: center;
+                text-decoration: none;
+                color: whitesmoke;
+                font-size: 16px;
+                border-radius: 30px;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            }
+            
+            .project-name {
+                padding-top : 20px;
+                text-align : center;
+            }
+            
+            .below-container{
+                padding-left : 100px;
+                padding-right : 100px;
+                padding-top : 50px;
+
+            }
+            
+            #social-links a {
+                padding-bottom: 15px;
+                border-bottom : 1px solid #434343;
+            }
+            
+            .footer-container{
+                width : 100%;
+                text-align : center;
+                text-transform : UPPERCASE;
+                clear : both;
+                padding : 10px;                
+                margin-top : 50px;
+            }
+            
+            hr {
+                border : 1px solid whitesmoke;
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="container">
+            <div class="header-container">
+                <div class="header-title">
+                    <a id="site-title" href="/" style="color : #1e5606; font-size : 26px; padding-left: 100px;">Jiening Wu</a>
+                
+                    <div id="header-nav">
+                        <nav>
+                            <ul>
+                                <li><a href="JieningWu_Project_Homepage.html">Home</a></li>
+                                <li><a href="JieningWu_Project_About.html">About</a></li>
+                                <li><a href="JieningWu_Project_Resume.html">Resume</a></li>
+                                <li><a href="JieningWu_Project_PortfolioDetails.html">Featured Work</a></li>
+                                <li><a href="JieningWu_Project_ContactUs.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-container">
+                <div class="intro" style="padding-top : 115px;">
+                    <div id="welcome">
+                        <h1 style="font-size : 92px;"> <strong>Jiening<br>Wu</strong></h1>
+                        
+                        <div id="verbs" style="font-size : 22px; text-align : right;"><font><strong>DESIGN. MANAGE. EXECUTE.</strong></font>
+                        </div><br><br>
+                        <image id="arrow" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/MediaWiki_Vector_skin_action_arrow.svg/1024px-MediaWiki_Vector_skin_action_arrow.svg.png" align="center" width="100" height="55"></image>
+                    </div>
+                </div>
+                
+                <div class="summary">
+                                        
+                    <h2>Seeking impact and innovation in creating empowering user experiences.</h2>
+                    
+                    <a href="JieningWu_Project_About.html"><button class="button1" type="button">View About Me</button></a>
+                    
+                    <a href="JieningWu_Project_Resume.html"><button class="button1" type="button" style='margin-left : 15px;'>View Resume</button></a>
+                    
+                </div>
+                
+                <div class="work-promo"> 
+                    <h2 style="width : 65%; padding-left : 17.5%; font-size : 30px; ">Clients from different industries have allowed me to lead an interdisciplinary team to customize and delivery products according to their needs every step of the way.</h2> <br>
+                    
+                    <a href="JieningWu_Project_PortfolioDetails.html"><button class="button2" type="button">View My Work</button></a>
+                </div>
+                
+                <div class="featured-work">
+                    <div class="label"><h3><font style="padding-bottom : 15px; border-bottom : 1px solid #1e5606;"><strong>Featured Work</strong></font></h3></div>
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="JieningWu_Project_PortfolioDetails.html#Sothebys"><image id="Sothebys" src="https://d1hbpr09pwz0sk.cloudfront.net/logo_url/sothebys-8b494ae6" align="center"></image></a>
+                                    
+                                <br>
+                                
+                                <a href="JieningWu_Project_PortfolioDetails.html#Sothebys"><div class="project-name">Sotheby's <br> Migration + Redesign</div></a>
+                                
+                            </td>
+                            
+                            <td>
+                                <a href="JieningWu_Project_PortfolioDetails.html#Ryder"><image id="Ryder" src="https://i0.wp.com/golfblogger.com/wp-content/uploads/2020/01/ryder-cup-logo.png?resize=256%2C256&is-pending-load=1" align="center"></image></a>
+                                    
+                                <br>
+                            
+                                <a href="JieningWu_Project_PortfolioDetails.html#Ryder"><div class="project-name">Ryder Cup + PGA Champ <br> Migration </div></a>
+                            </td>
+                            
+                            <td>
+                                <a href="JieningWu_Project_PortfolioDetails.html#BCG"><image id="BCG" src="https://res-3.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/hochutaebmmiexuuosov" align="center"></image></a>
+                                
+                                <br>
+                                
+                                <a href="JieningWu_Project_PortfolioDetails.html#BCG"><div class="project-name">Boston Consulting Group <br> Migration</div></a>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                    
+                    <a href="JieningWu_Project_PortfolioDetails.html"><button class="button3" type="button">View More</button></a>
+                </div>
+            </div>
+           
+            <div class="below-container">
+                    <div id="social-links">
+                        <a href="JieningWu_Project_ContactUs.html"><font style="font-size : 30px">Get in Touch →</font></a><br><br><br><br>
+
+                        <a href="https://www.instagram.com/jningwu"><font style="font-size : 20px">Instagram</font></a>
+                        <font style="font-size : 20px"> / </font>
+
+                        <a href="https://www.linkedin.com/in/jieningwu/"><font style="font-size : 20px">LinkedIn</font></a>
+                    </div>
+            </div>
+
+            <div class="footer-container">
+                <footer>
+                     <div><hr align="center" width=90%>Jiening Wu 2020 - All Rights Reserved</div>
+                 </footer>
+            </div>
+        </div>
+    </body>
+</html>
